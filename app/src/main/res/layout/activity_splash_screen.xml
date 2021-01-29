@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SplashScreenActivity">
+
+    <ImageView android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:src="@drawable/screen_splash"
+        android:scaleType="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#F0EF31"
+            android:text="Taxi"
+
+            android:background="@android:color/darker_gray"
+
+
+            android:textStyle="bold"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:layout_marginTop="140dp"/>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:theme="@style/ProgressBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"/>
+    </LinearLayout>
+
+</FrameLayout>
